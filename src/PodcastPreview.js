@@ -3,7 +3,7 @@ class PodcastPreview extends HTMLElement {
     super();
 
     const shadow = this.attachShadow({ mode: "open" });
-    shadow.appendChild(template.content.cloneNode(true));
+    shadow.appendChild(PodcastPreview.content.cloneNode(true));
   }
 }
 
