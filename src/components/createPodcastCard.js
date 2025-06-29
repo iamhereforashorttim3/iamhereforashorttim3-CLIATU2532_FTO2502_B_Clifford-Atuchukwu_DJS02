@@ -1,5 +1,6 @@
 import { GenreService } from "../utils/GenreService.js";
 import { DateUtils } from "../utils/DateUtils.js";
+import "../PodcastPreview.js";
 
 /**
  * Podcast Card Factory - Creates a DOM element for a podcast preview card.
