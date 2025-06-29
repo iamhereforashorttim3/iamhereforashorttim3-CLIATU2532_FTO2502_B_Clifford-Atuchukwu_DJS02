@@ -1,3 +1,6 @@
+/**
+ * Creates a template with the use of inner.html for the podcast cards
+ */
 const template = document.createElement("template");
 template.innerHTML = /*html*/ `
   
@@ -10,6 +13,9 @@ template.innerHTML = /*html*/ `
   </div>
 `;
 
+/**
+ * Defines a new custom HTML element
+ */
 class PodcastPreview extends HTMLElement {
   constructor() {
     super();
@@ -17,7 +23,10 @@ class PodcastPreview extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open" });
     shadow.appendChild(template.content.cloneNode(true));
   }
-
+  /**
+   * Accepts the Podcast data object and begins rendering
+   * @param {object} cardObj - It is the Podcast data such as the image, title, seasons, genres and updated info
+   */
   setCard(cardObj) {
     this.card = cardObj;
     this.render();
