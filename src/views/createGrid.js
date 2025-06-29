@@ -7,7 +7,7 @@ import { createModal } from "../components/createModal.js";
  * @principle SRP - Manages layout and rendering only; delegates card creation and modal logic elsewhere.
  */
 export const createGrid = () => {
-  const container = document.getElementById("podcastGrid");
+  const container = document.getElementById("podcast-preview");
 
   return {
     /**
